@@ -53,7 +53,7 @@ class ShapeFactory{
         static void UnregisterObject(const std::string& type){ map.erase(type); }
         
         static std::shared_ptr<IShape> CreateObject(const std::string& type){
-            FactoryMap::iterator it = map.find(type);
+            std::unordered_map<std::string, ShapeCreateCallback>::iterator it = map.find(type);
             return (it!=map.end()) ? (it->second)() : nullptr;
         }
         

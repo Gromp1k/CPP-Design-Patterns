@@ -80,7 +80,10 @@
 			"iterator": "cpp",
 			"memory_resource": "cpp",
 			"utility": "cpp",
-			"stop_token": "cpp"
+			"stop_token": "cpp",
+			"__tree": "cpp",
+			"map": "cpp",
+			"ranges": "cpp"
 		}
 	}
 }
