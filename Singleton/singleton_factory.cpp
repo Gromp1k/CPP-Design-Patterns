@@ -46,14 +46,14 @@ class VehicleFactory
 
         static IVehicle* CreateObject(VehicleType key){ return map[key](); }
 
-private:
-    VehicleFactory() { }
-    typedef IVehicle* (*Callback)();
-    inline static std::unordered_map<VehicleType,Callback> map =
-    { 
-        {VehicleType::TOYOTA, Toyota::Create},
-        {VehicleType::VOLVO, Volvo::Create}
-    };
+    private:
+        VehicleFactory() { }
+        typedef IVehicle* (*Callback)();
+        inline static std::unordered_map<VehicleType,Callback> map =
+        { 
+            {VehicleType::TOYOTA, Toyota::Create},
+            {VehicleType::VOLVO, Volvo::Create}
+        };
 };
 
 int main(int argc, char** argv){
