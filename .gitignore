@@ -1,3 +1,10 @@
-CPP-Design-Patterns.code-workspace
-.vscode/**/*
 
+.vscode/*      # Maybe .vscode/**/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+CPP-Design-Patterns.code-workspace
+main
+*.json
+.gitignore
