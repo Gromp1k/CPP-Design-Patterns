@@ -12,6 +12,7 @@ int main(int argc, char const *argv[])
     std::cout << std::string(colCircle) << std::endl;
 
     TransparentShape< ColoredShape<Square>> transColSquare{ 75, "purple", 16 };
+    std::cout << std::string(transColSquare) << std::endl; 
 
     return 0;
 }
