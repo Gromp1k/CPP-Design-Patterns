@@ -6,5 +6,6 @@
 !.vscode/c_cpp_properties.json
 CPP-Design-Patterns.code-workspace
 main
+a.out
 *.json
 .gitignore
